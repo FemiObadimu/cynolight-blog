@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, serif;
+}
+
+/* -----------------------------------------------------------
+                    Navbar Styles    
+----------------------------------------------------------- */
+.navbar {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  height: 90px;
+  top: 0;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+}
+
+.logos {
+  color: #ffa600;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.nav-logo {
+  align-items: center;
+  margin: 10px 0px 0px 20px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+.nav-logo:hover {
+  color: rgb(4, 3, 3);
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin: 0.5rem 7rem 0rem 0rem;
+}
+
+.nav-links {
+  color: #ccc;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-links:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.nav-item {
+  line-height: 50px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+.nav-item:hover:after {
+  width: 100%;
+  background: #ffa600;
+}
+
+.nav-item .active {
+  color: #ccc;
+  border: 1px solid none;
+}
+
+.nav-icon {
+  display: none;
+  padding: 3px 0px;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 95vh;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 80px;
+    left: -160%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #f2f2f2;
+    border-radius: 15px;
+  }
+
+  .nav-menu.active {
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: #ffa600;
+    border: none;
+  }
+  .nav-links {
+    color: #ffa600;
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    color: #ffa600;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #ffa600;
+  }
+}
+
+/* -----------------------------------------------------------
+                    LandingPage Styles    
+----------------------------------------------------------- */
+.link,
+.link:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+.ball-triangle {
+  color: #ffa600;
+  padding: 20px 0px;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 250px 0px 0px 0px;
+  align-items: center;
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.heading {
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+.preview {
+  padding: 20px 0px;
+  color: #ccc;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.title,
+.author {
+  color: #ffa600;
+}
+
+/* -----------------------------------------------------------
+                    Create Styles    
+----------------------------------------------------------- */
+
+.form {
+  color: #ccc;
+}
+
+.btn {
+  background-color: #ffa600;
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ffa600;
+  color: white;
+  border: none;
+}
+
+.btn:focus {
+  background-color: #ffa600;
+  color: white;
+  border: none;
+  scale: 40px;
+}
+
+.form-control {
+  border-bottom: 1px solid #c0c0c0 !important;
+  box-shadow: inset 0 0 #424242 !important;
+}
+.form-control:focus {
+  border-bottom: 1px solid #c0c0c0 !important;
+  box-shadow: inset 0 0 #424242 !important;
+}
