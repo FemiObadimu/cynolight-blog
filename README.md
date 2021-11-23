@@ -1,8 +1,10 @@
 # React Cyno Application with backend response for a contact page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) in conjunction with react-Bootstrap core Library
 
-## Available Scripts
+
+## coming soon
+
 
 In the project directory, you can run:
 
